@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #444;
+  background-color: #f3f3f3;
+  height: 100vh;
+  padding: 2rem;
+}
+
+.title {
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.title h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.card_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  height: 300px;
+  align-items: center;
+  border: 1px solid grey;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 10rem;
+  background-color: white;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.magic_buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 5rem;
+}
+
+[class^="btn"] {
+  display: inline-block;
+  margin: 4px 2px;
+  padding: 15px 30px;
+  min-width: 200px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: inherit;
+  border: 2px solid;
+
+  background-position: 100% 0;
+  background-size: 300%;
+
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+[class^="btn"]:hover {
+  background-position: 0 100%;
+  color: white;
+}
+
+.double_number {
+  color: #5e0ff1;
+  border-color: #5e0ff1;
+  background-image: linear-gradient(45deg, #5e0ff1 50%, transparent 50%);
+}
+
+.sum_deck {
+  color: #4ff10f;
+  border-color: #4ff10f;
+  background-image: linear-gradient(45deg, #4ff10f 50%, transparent 50%);
+}
+
+.find_middle {
+  color: #f1bc0f;
+  border-color: #f1bc0f;
+  background-image: linear-gradient(45deg, #f1bc0f 50%, transparent 50%);
+}
+
+.find_2 {
+  color: #e90ff1;
+  border-color: #e90ff1;
+  background-image: linear-gradient(45deg, #e90ff1 50%, transparent 50%);
+}
+
+.reorder_deck {
+  color: #000000;
+  border-color: #000000;
+  background-image: linear-gradient(45deg, #000000 50%, transparent 50%);
+}
+
+.reset_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.reset {
+  color: #c50b0b;
+  border-color: #c50b0b;
+  background-image: linear-gradient(45deg, #c50b0b 50%, transparent 50%);
+  margin: auto;
+}
