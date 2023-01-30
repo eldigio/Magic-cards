@@ -15,8 +15,6 @@ const resetButton = document.querySelector(".reset");
 
 ////////////////////// FUNCTIONS ////////////////////////////
 
-const initialize = () => {};
-
 ////////////////////// EVENT LISTENERS ////////////////////////////
 
 // Raddoppia il valore
@@ -30,5 +28,3 @@ const initialize = () => {};
 // Somma carte
 
 // Reset
-
-initialize();
