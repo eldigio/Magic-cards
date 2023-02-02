@@ -12,12 +12,28 @@ const find2 = document.querySelector('.find_2');
 const reorderDeck = document.querySelector('.reorder_deck');
 const sumDeck = document.querySelector('.sum_deck');
 const resetButton = document.querySelector('.reset');
+// cardContainer.firstChild.innerHTML = '';
 
 ////////////////////// FUNCTIONS ////////////////////////////
+
+const reset = () => {
+  deck.forEach(value => {
+    const newNode = document.createElement('div');
+    newNode.classList.add('card');
+    newNode.textContent = value;
+    cardContainer.appendChild(newNode);
+  });
+};
+
+const double = () => {
+  const value = cardContainer.childNodes.forEach(value => value.textContent);
+  console.log(value);
+};
 
 ////////////////////// EVENT LISTENERS ////////////////////////////
 
 // Raddoppia il valore
+doubleNumber.addEventListener('click', double);
 
 // Trova le carte centrali
 
@@ -28,3 +44,4 @@ const resetButton = document.querySelector('.reset');
 // Somma carte
 
 // Reset
+reset();
